@@ -1,0 +1,31 @@
+.\"
+.\" @(#) dbrowlock.1 1.1  94/09/25 13:27:06
+.\"
+.TH DBROWLOCK 1 "dbrowlock 1.1"
+.SH NAME
+dbrowlock \- set lock mode of a database table to row-level
+.SH SYNOPSIS
+dbrowlock \-d dbname [\-t tabname] [filename]
+.SH DESCRIPTION
+.I Dbrowlock
+will generate SQL "alter table %s lock mode (row)" statements for
+Informix database tables.
+.SH OPTIONS
+.TP
+.B \-d
+database name
+.TP
+.B \-t
+table name
+.TP
+filename is the name of the file that the SQL statements go in
+.SH NOTES
+.I Dbrowlock
+requires that an Informix-ONLINE engine be currently in use on the
+machine running it.
+.PP
+If a table name is not specified, the entire database is altered.
+.PP
+Wild-card characters may be used in the table name if desired.
+.SH SUPPORT
+Send bug reports to Dave Snyder <dave@snide.com>

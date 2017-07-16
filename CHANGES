@@ -1,0 +1,7 @@
+D 1.1 94/09/25 13:27:07 dave 2 1
+Added support for wild cards in tabname
+Write SQL statements to a file rather than executing them
+Fixed syntax error when doing "-d" only
+Added ORDER BY when doing "-d" only
+D 1.0 94/07/01 16:01:15 dave 1 0
+date and time created 94/07/01 16:01:15 by dave
